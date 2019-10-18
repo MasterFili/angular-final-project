@@ -1,0 +1,19 @@
+<div id="header">
+  <nav>
+      <a class="btn" routerLink="greeting" routerLinkActive="active">Create Task</a>
+      <a class="btn" routerLink="skills" routerLinkActive="active">View & Edit Task</a>
+    </nav>
+<form style="text-align:center">
+  <fieldset>
+    <legend>Create a Task</legend>
+    Title:<br>
+    <input type="text" name="title"><br>
+    Time to Complete:<br>
+    <input type="text" name="timeToComplete"><br>
+    Description:<br>
+    <textarea type="text" name="description"></textarea><br><br>
+    <input type="submit" value="Submit">
+  </fieldset>
+</form>
+<router-outlet></router-outlet>
+<app-task></app-task>
